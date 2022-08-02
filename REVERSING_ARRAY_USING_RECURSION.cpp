@@ -5,7 +5,6 @@ void swap(int l,int m){
     int temp=arr[m];
     arr[m]=arr[l];
     arr[l]=temp;
-    cout<<"swap"<<" ";
 }
 
 void reversearray(int l,int m){
@@ -14,7 +13,6 @@ void reversearray(int l,int m){
     }
     swap(l,m);
     reversearray(l+1,m-1);
-    cout<<"hi"<<" ";
 }
 
 int main()
