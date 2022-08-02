@@ -4,20 +4,21 @@
 using namespace std;
 
 int n,arr[10];
-
+/*
 void swap(int a,int b){
     ll temp;
     temp=arr[a];
     arr[a]=arr[b];
     arr[b]=temp;
 }
-
+*/
+//THERE IS INBUILD SWAP FUNCTION IN CPP
 void reversearray(int i)
 {
     if(i>=n/2){
         return;
     }
-    swap(i,n-i-1);
+    swap(arr[i],arr[n-i-1]);
     reversearray(i+1);
 }
 
