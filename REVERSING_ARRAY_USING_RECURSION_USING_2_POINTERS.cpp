@@ -1,17 +1,19 @@
 #include<bits/stdc++.h>
 using namespace std;
 int n,arr[10];
+/*
 void swap(int l,int m){
     int temp=arr[m];
     arr[m]=arr[l];
     arr[l]=temp;
 }
-
+*/
+//THERE IS INBUILD SWAP FUNCTION IN CPP
 void reversearray(int l,int m){
     if(l>=m){
         return;
     }
-    swap(l,m);
+    swap(arr[l],arr[m]);
     reversearray(l+1,m-1);
 }
 
