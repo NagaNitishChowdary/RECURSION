@@ -37,7 +37,8 @@ int main()
         v.emplace_back(nu);
     }
     //vector<int>vt1;
-    int target=7;
+    int target;
+    cin>>target;
     vector<vector<int>>knnc;
     knnc=combinationSum(v,target);
     for(auto vctr:knnc){
